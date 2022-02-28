@@ -1,0 +1,842 @@
+.text-field {
+	-fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
+}
+
+.text-field:focused {
+	-fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
+}
+
+#manage-agent,
+#restart-agent {
+	-fx-background-color: transparent;
+	-fx-background-radius: 15;
+	-fx-text-fill: rgb(143, 145, 154);
+	-fx-background-insets: 0, 1, 1;
+}
+
+#manage-agent:hover,
+#restart-agent:hover {
+	-fx-background-color: rgb(32, 32, 45);
+	-fx-text-fill: white;
+	-fx-background-radius: 15;
+	-fx-background-insets: 0, 1, 1;
+}
+
+#searchField {
+	-fx-background-color: rgb(46, 46, 65);
+	-fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+	-fx-text-fill: white;
+	-fx-background-radius: 15;
+}
+
+#searchField:focused {
+	-fx-background-color: rgb(46, 46, 65);
+	-fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}
+
+#login-field {
+	-fx-background-color: transparent;
+	-fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+	-fx-text-fill: black;
+	-fx-border-color: grey;
+	-fx-border-width: 0 0 1 0;
+}
+
+#login-field:focused {
+	-fx-background-color: transparent;
+	-fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+	-fx-border-color: grey;
+	-fx-border-width: 0 0 1 0;
+}
+
+#login-button {
+	-fx-background-color: rgb(34, 35, 48);
+	-fx-background-radius: 15;
+	-fx-background-insets: 0, 1, 1;
+	-fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.6), 3, 0.0, 0, 1);
+}
+
+#agent-download-button,
+#agent-ransomware-button,
+#attack-button,
+#build-agent {
+	-fx-background-color: rgb(46, 46, 65);
+	-fx-background-radius: 15;
+	-fx-background-insets: 0, 1, 1;
+	-fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.6), 3, 0.0, 0, 1);
+}
+
+#close:hover {
+	-fx-background-image: url(../images/window/close/close_hover.png);
+}
+
+#minimize:hover {
+	-fx-background-image: url(../images/window/minimize/hide_hover.png);
+}
+
+#minimize:pressed {
+	-fx-background-image: url(../images/window/minimize/hide_out.png);
+}
+
+#navButton {
+	-fx-background-color: transparent;
+	-fx-text-fill: #7e7f8e;
+}
+
+#navButton:hover {
+	-fx-text-fill: #c55759;
+	-fx-border-color: #c55759;
+	-fx-border-width: 0px 0px 2.5px 0px;
+}
+
+#currentNavButton {
+	-fx-background-color: transparent;
+	-fx-text-fill: #942e2e;
+	-fx-border-color: #942e2e;
+	-fx-border-width: 0px 0px 2.5px 0px;
+}
+
+#countriesChart {
+	-fx-background-color: transparent;
+	-fx-legend-visible: true;
+	-fx-legend-side: bottom;
+	-fx-title-side: top;
+	-fx-pie-label-visible: false;
+}
+
+.chart-legend {
+	-fx-background-color: transparent;
+}
+
+.chart-legend-item {
+	-fx-text-fill: WHITE;
+}
+
+.chart-title {
+	-fx-text-fill: WHITE;
+}
+
+#consoleScrollPane>.viewport {
+	-fx-background-color: transparent;
+}
+
+#consoleScrollPane,
+.corner {
+	-fx-background-color: transparent;
+}
+
+#downloadField,
+#builderField {
+	-fx-background-color: rgb(26, 27, 36);
+	-fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+	-fx-text-fill: white;
+}
+
+#downloadField:focused,
+#builderField:focused {
+	-fx-background-color: rgb(26, 27, 36);
+	-fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}
+
+#attackField,
+#agent-download-field,
+#agent-ransomware-field {
+	-fx-background-color: rgb(46, 46, 65);
+	-fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+	-fx-text-fill: white;
+}
+
+#attackField:focused,
+#agent-download-field:focused,
+#agent-ransomware-field:focused {
+	-fx-background-color: rgb(46, 46, 65);
+	-fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}
+
+#agent-desktop-resolutionChoice,
+#agent-desktop-screenChoice,
+#methodChoice,
+#jdkChoice {
+	-fx-background-color: rgb(46, 46, 65);
+	-fx-mark-color: rgb(26, 27, 36);
+}
+
+#agent-desktop-resolutionChoice>.label,
+#agent-desktop-screenChoice>.label,
+#methodChoice>.label,
+#jdkChoice>.label {
+	-fx-text-fill: white;
+}
+
+#agent-desktop-resolutionChoice .context-menu,
+#agent-desktop-screenChoice .context-menu,
+#methodChoice .context-menu,
+#jdkChoice .context-menu {
+	-fx-background-color: rgb(24, 25, 35);
+	-fx-mark-color: white;
+}
+
+#agent-desktop-resolutionChoice .menu-item:focused,
+#agent-desktop-screenChoice .menu-item:focused,
+#methodChoice .menu-item:focused,
+#jdkChoice .menu-item:focused {
+	-fx-background-color: rgb(46, 46, 65);
+}
+
+#agent-desktop-resolutionChoice .menu-item>.label,
+#agent-desktop-screenChoice .menu-item>.label,
+#methodChoice .menu-item>.label,
+#jdkChoice .menu-item>.label {
+	-fx-text-fill: rgb(178, 178, 178);
+}
+
+#agent-desktop-resolutionChoice .menu-item:focused > .label,
+#agent-desktop-screenChoice .menu-item:focused > .label,
+#methodChoice .menu-item:focused>.label,
+#jdkChoice .menu-item:focused>.label {
+	-fx-text-fill: rgb(178, 178, 178);
+}
+
+#logs-tableView {
+	-fx-background-color: rgb(46, 46, 65);
+}
+
+#logs-tableView .table-cell {
+	-fx-text-fill: rgb(255, 255, 255);
+	-fx-font: 15 arial;
+	-fx-skin: "com.sun.javafx.scene.control.skin.TableCellSkin";
+	-fx-padding: 0.576667em;
+	-fx-border-color: rgb(44, 44, 63) transparent transparent transparent;
+	-fx-border-width: 0.093333em;
+	-fx-cell-size: 2.5em;
+}
+
+#logs-tableView .column-header-background .filler {
+	-fx-background-color: rgb(46, 46, 65);
+}
+
+#logs-tableView .column-header {
+	-fx-background-color: rgb(46, 46, 65);
+}
+
+#logs-tableView .column-header-background .label {
+	-fx-background-color: rgb(46, 46, 65);
+	-fx-text-fill: WHITE;
+	-fx-font: 16 arial;
+	-fx-font-weight: bold;
+}
+
+#logs-tableView .corner {
+	-fx-background-color: rgb(46, 46, 65);
+}
+
+#logs-tableView .table-cell {
+	-fx-padding: 2 0 2 10px;
+}
+
+#logs-tableView .table-row-cell: hover {
+	-fx-background-color: #93f9b911;
+}
+
+#logs-tableView .table-row-cell: odd {
+	-fx-background-color: rgb(46, 46, 65);
+	-fx-background-insets: 0, 0 0 1 0;
+	-fx-padding: 0.0em;
+}
+
+#logs-tableView .table-row-cell: even {
+	-fx-background-color: rgb(46, 46, 65);
+	-fx-background-insets: 0, 0 0 1 0;
+	-fx-padding: 0.0em;
+}
+
+#logs-tableView .scroll-bar {
+	-fx-background-color: transparent;
+}
+
+#logs-tableView .scroll-bar:vertical .track {
+	-fx-background-color: rgb(46, 46, 65);
+	-fx-border-color: rgb(46, 46, 65);
+	-fx-background-radius: 0.0em;
+	-fx-border-radius: 2.0em;
+}
+
+#logs-tableView .scroll-bar:vertical .increment-button,
+#logs-tableView .scroll-bar:vertical .decrement-button {
+	-fx-background-color: rgb(46, 46, 65);
+	-fx-background-radius: 0.0em;
+	-fx-padding: 0.0 10.0 0.0 0.0;
+}
+
+#logs-tableView .scroll-bar .increment-arrow,
+#logs-tableView .scroll-bar .decrement-arrow {
+	-fx-shape: " ";
+	-fx-padding: 0.15em 0.0;
+}
+
+#logs-tableView .scroll-bar:vertical .increment-arrow,
+#logs-tableView .scroll-bar:vertical .decrement-arrow {
+	-fx-shape: " ";
+	-fx-padding: 0.0 0.15em;
+}
+
+#logs-tableView .scroll-bar:vertical .thumb {
+	-fx-background-color: derive(black, 90.0%);
+	-fx-background-insets: 2.0, 0.0, 0.0;
+	-fx-background-radius: 2.0em;
+}
+
+#logs-tableView .scroll-bar:vertical .thumb:hover {
+	-fx-background-color: derive(#4D4C4F, 10.0%);
+	-fx-background-insets: 2.0, 0.0, 0.0;
+	-fx-background-radius: 2.0em;
+}
+
+#logs-tableView .scroll-bar:horizontal .increment-arrow,
+#logs-tableView .scroll-bar:horizontal .decrement-arrow,
+#logs-tableView .scroll-bar:horizontal .increment-button,
+#logs-tableView .scroll-bar:horizontal .decrement-button,
+#agent-browserStealer-tableView .scroll-bar:horizontal .increment-arrow,
+#agent-browserStealer-tableView .scroll-bar:horizontal .decrement-arrow,
+#agent-browserStealer-tableView .scroll-bar:horizontal .increment-button,
+#agent-browserStealer-tableView .scroll-bar:horizontal .decrement-button,
+#agent-fileManager-tableView .scroll-bar:horizontal .increment-arrow,
+#agent-fileManager-tableView .scroll-bar:horizontal .decrement-arrow,
+#agent-fileManager-tableView .scroll-bar:horizontal .increment-button,
+#agent-fileManager-tableView .scroll-bar:horizontal .decrement-button,
+#agent-processManager-tableView .scroll-bar:horizontal .increment-arrow,
+#agent-processManager-tableView .scroll-bar:horizontal .decrement-arrow,
+#agent-processManager-tableView .scroll-bar:horizontal .increment-button,
+#agent-processManager-tableView .scroll-bar:horizontal .decrement-button {
+	-fx-padding: 0;
+}
+
+#builderBox .box {
+	-fx-background-color: rgb(26, 27, 36);
+	-fx-border-color: rgb(26, 27, 36);
+	-fx-border-radius: 3px;
+}
+
+#builderBox:selected .mark {
+	-fx-background-color: white;
+}
+
+#builderBox:selected .box {
+	-fx-background-color: rgb(26, 27, 36);
+}
+
+#agent-webcam-checkBox .box, #agent-autostart-box .box {
+	-fx-background-color: rgb(46, 46, 65);
+	-fx-border-color: rgb(46, 46, 65);
+	-fx-border-radius: 3px;
+}
+#agent-desktop-remoteCheckBox .box {
+	-fx-background-color: rgb(46, 46, 65);
+	-fx-border-color: rgb(46, 46, 65);
+	-fx-border-radius: 1px;
+    -fx-padding: 1px;
+}
+
+#agents-tableView .column-header {
+	-fx-background-color: transparent;
+}
+
+#agents-tableView .column-header-background {
+	-fx-background-color: transparent;
+	-fx-padding: 0.97em;
+}
+
+#agents-tableView .column-header-background .label {
+	-fx-background-color: transparent;
+	-fx-text-fill: rgb(126, 127, 142);
+	-fx-font: 15 Helvetica;
+	-fx-font-weight: bold;
+	-fx-border-color: transparent transparent transparent transparent;
+}
+
+#agents-tableView .show-hide-columns-button {
+	-fx-background-color: transparent;
+	-fx-border-color: -fx-box-border;
+	-fx-border-insets: -1 -1 0 0;
+}
+
+#agents-tableView .filler {
+	-fx-background-color: transparent;
+}
+
+#agents-tableView {
+	-fx-background-color: transparent;
+}
+
+#agents-tableView .table-row-cell:odd {
+	-fx-background-color: transparent;
+	-fx-background-insets: 0, 0 0 1 0;
+	-fx-padding: 0.0em;
+}
+
+#agents-tableView .table-row-cell:even {
+	-fx-background-color: transparent;
+	-fx-background-insets: 0, 0 0 1 0;
+	-fx-padding: 0.0em;
+}
+
+#agents-tableView .table-cell {
+	-fx-alignment: CENTER;
+	-fx-column-halignment: CENTER;
+	-fx-row-valignment: CENTER;
+	-fx-skin: "com.sun.javafx.scene.control.skin.TableCellSkin";
+	-fx-padding: 0.89em;
+	-fx-border-color: transparent transparent transparent transparent;
+	-fx-border-width: 0.093333em;
+	-fx-cell-size: 3.5em;
+	-fx-text-fill: rgb(191, 202, 210);
+	-fx-font: 14 "Verdana";
+}
+
+#agents-tableView .table-row-cell: hover {
+	-fx-background-color: rgb(68, 69, 87);
+	-fx-text-background-color: rgb(255, 255, 255);
+	-fx-background-radius: 18px;
+	-fx-background-insets: 3px;
+}
+
+#agents-tableView .table-row-cell: selected {
+	-fx-background-color: rgb(60, 61, 77);
+	-fx-text-background-color: rgb(255, 255, 255);
+	-fx-background-radius: 18px;
+	-fx-background-insets: 3px;
+}
+
+#agents-tableView .scroll-bar:vertical .track {
+	-fx-background-color: rgb(34, 35, 48);
+	-fx-border-color: rgb(34, 35, 48);
+	-fx-background-radius: 0.0em;
+	-fx-border-radius: 2.0em;
+}
+
+#agents-tableView .scroll-bar:vertical .increment-button,
+#agents-tableView .scroll-bar:vertical .decrement-button {
+	-fx-background-color: rgb(34, 35, 48);
+	-fx-background-radius: 0.0em;
+	-fx-padding: 0.0 5.0 0.0 0.0;
+}
+
+#agents-tableView .scroll-bar .increment-arrow,
+#agents-tableView .scroll-bar .decrement-arrow {
+	-fx-shape: " ";
+	-fx-padding: 0.11em 0.0;
+}
+
+#agents-tableView .scroll-bar:vertical .increment-arrow,
+#agents-tableView .scroll-bar:vertical .decrement-arrow {
+	-fx-shape: " ";
+	-fx-padding: 0.0 0.11em;
+}
+
+#agents-tableView .scroll-bar:vertical .thumb {
+	-fx-background-color: derive(black, 90.0%);
+	-fx-background-insets: 2.0, 0.0, 0.0;
+	-fx-background-radius: 2.0em;
+}
+
+#agents-tableView .scroll-bar:vertical .thumb:hover {
+	-fx-background-color: derive(#4D4C4F, 10.0%);
+	-fx-background-insets: 2.0, 0.0, 0.0;
+	-fx-background-radius: 2.0em;
+}
+
+#agents-tableView .scroll-bar:horizontal .increment-arrow,
+#agents-tableView .scroll-bar:horizontal .decrement-arrow,
+#agents-tableView .scroll-bar:horizontal .increment-button,
+#agents-tableView .scroll-bar:horizontal .decrement-button {
+	-fx-padding: 0;
+}
+
+.context-menu {
+	-fx-background-color: rgb(46, 46, 65);
+	-fx-font: 12 "Consolas";
+}
+
+.menu-item .label {
+	-fx-text-fill: white;
+}
+
+.menu-item:focused {
+	-fx-background-color: rgb(68, 69, 87);
+}
+
+#agents-keylogger-scrollPane > .viewport, #agents-discordGrabber-scrollPane > .viewport, #agents-clipboard-scrollPane > .viewport, #agents-shell-scrollPane > .viewport {
+	-fx-background-color: rgb(46, 46, 65);
+}
+
+#agents-keylogger-scrollPane, #agents-discordGrabber-scrollPane, #agents-clipboard-scrollPane, #agents-shell-scrollPane, .corner {
+	-fx-background-color: rgb(46, 46, 65);
+}
+
+#agents-shell-commandField {
+	-fx-background-color: rgb(46, 46, 65);
+	-fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+	-fx-text-fill: white;
+	-fx-alignment: center;
+}
+
+#agents-shell-commandField:focused {
+	-fx-background-color: rgb(46, 46, 65);
+	-fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}
+
+#agent-browserStealer-refresh, #agent-browserStealer-copy, #agent-processManager-refresh, #agent-fileManager-refresh, #agent-fileManager-back, #agent-processManager-close, #agents-shell-execute, #agents-shell-addUser, #agents-keylogger-copy, #agents-clipboard-copy, #agents-discordGrabber-copy {
+	-fx-background-color: rgb(46, 46, 65), linear-gradient(rgb(46, 46, 65) 50%, rgb(46, 46, 65) 100%), radial-gradient(center 50% -40%, radius 200%, rgb(46, 46, 65) 45%, rgba(46, 46, 65, 0) 50%);
+	-fx-background-radius: 30;
+	-fx-background-insets: 0, 1, 1;
+	-fx-text-fill: white;
+	-fx-effect: dropshadow(three-pass-box, rgba(46, 46, 65, 0.6), 3, 0.0, 0, 1);
+}
+
+#agent-processManager-tableView .column-header {
+	-fx-background-color: transparent;
+}
+
+#agent-processManager-tableView .column-header-background {
+	-fx-background-color: transparent;
+	-fx-padding: 0.97em;
+}
+
+#agent-processManager-tableView .column-header-background .label {
+	-fx-background-color: transparent;
+	-fx-text-fill: rgb(126, 127, 142);
+	-fx-font: 15 Helvetica;
+	-fx-font-weight: bold;
+	-fx-border-color: transparent transparent transparent transparent;
+}
+
+#agent-processManager-tableView .show-hide-columns-button {
+	-fx-background-color: transparent;
+	-fx-border-color: -fx-box-border;
+	-fx-border-insets: -1 -1 0 0;
+}
+
+#agent-processManager-tableView .filler {
+	-fx-background-color: transparent;
+}
+
+#agent-processManager-tableView {
+	-fx-background-color: transparent;
+}
+
+#agent-processManager-tableView .table-row-cell:odd {
+	-fx-background-color: transparent;
+	-fx-background-insets: 0, 0 0 1 0;
+	-fx-padding: 0.0em;
+}
+
+#agent-processManager-tableView .table-row-cell:even {
+	-fx-background-color: transparent;
+	-fx-background-insets: 0, 0 0 1 0;
+	-fx-padding: 0.0em;
+}
+
+#agent-processManager-tableView .table-cell {
+	-fx-alignment: CENTER;
+	-fx-column-halignment: CENTER;
+	-fx-row-valignment: CENTER;
+	-fx-skin: "com.sun.javafx.scene.control.skin.TableCellSkin";
+	-fx-padding: 0.89em;
+	-fx-border-color: transparent transparent transparent transparent;
+	-fx-border-width: 0.093333em;
+	-fx-cell-size: 3.5em;
+	-fx-text-fill: rgb(191, 202, 210);
+	-fx-font: 13 "Verdana";
+}
+
+#agent-processManager-tableView .table-row-cell: hover {
+	-fx-background-color: rgb(68, 69, 87);
+	-fx-text-background-color: rgb(255, 255, 255);
+	-fx-background-radius: 18px;
+	-fx-background-insets: 3px;
+}
+
+#agent-processManager-tableView .table-row-cell: selected {
+	-fx-background-color: rgb(60, 61, 77);
+	-fx-text-background-color: rgb(255, 255, 255);
+	-fx-background-radius: 18px;
+	-fx-background-insets: 3px;
+}
+
+#agent-processManager-tableView > .viewport {
+   -fx-background-color: yellow;
+}
+
+#agent-processManager-tableView, .corner {
+   -fx-background-color: transparent;
+}
+
+#agent-processManager-tableView .scroll-bar:vertical .track{
+    -fx-background-color : rgb(26, 27, 36);
+    -fx-border-color :rgb(26, 27, 36);
+    -fx-background-radius : 0.0em;
+    -fx-border-radius :2.0em;
+}
+
+#agent-processManager-tableView .scroll-bar:vertical .increment-button ,
+#agent-processManager-tableView .scroll-bar:vertical .decrement-button {
+    -fx-background-color :rgb(26, 27, 36);
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 10.0 0.0 0.0;
+}
+
+#agent-processManager-tableView .scroll-bar .increment-arrow,
+#agent-processManager-tableView .scroll-bar .decrement-arrow{
+    -fx-shape : " ";
+    -fx-padding :0.15em 0.0;
+}
+
+#agent-processManager-tableView .scroll-bar:vertical .increment-arrow,
+#agent-processManager-tableView .scroll-bar:vertical .decrement-arrow{
+    -fx-shape : " ";
+    -fx-padding :0.0 0.15em;
+}
+
+#agent-processManager-tableView .scroll-bar:vertical .thumb {
+    -fx-background-color :derive(black,90.0%);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}
+
+#agent-processManager-tableView .scroll-bar:vertical .thumb:hover {
+    -fx-background-color :derive(#4D4C4F,10.0%);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}
+
+#agent-browserStealer-tableView .column-header {
+	-fx-background-color: transparent;
+}
+
+#agent-browserStealer-tableView .column-header-background {
+	-fx-background-color: transparent;
+	-fx-padding: 0.97em;
+}
+
+#agent-browserStealer-tableView .column-header-background .label {
+	-fx-background-color: transparent;
+	-fx-text-fill: rgb(126, 127, 142);
+	-fx-font: 15 Helvetica;
+	-fx-font-weight: bold;
+	-fx-border-color: transparent transparent transparent transparent;
+}
+
+#agent-browserStealer-tableView .show-hide-columns-button {
+	-fx-background-color: transparent;
+	-fx-border-color: -fx-box-border;
+	-fx-border-insets: -1 -1 0 0;
+}
+
+#agent-browserStealer-tableView .filler {
+	-fx-background-color: transparent;
+}
+
+#agent-browserStealer-tableView {
+	-fx-background-color: transparent;
+}
+
+#agent-browserStealer-tableView .table-row-cell:odd {
+	-fx-background-color: transparent;
+	-fx-background-insets: 0, 0 0 1 0;
+	-fx-padding: 0.0em;
+}
+
+#agent-browserStealer-tableView .table-row-cell:even {
+	-fx-background-color: transparent;
+	-fx-background-insets: 0, 0 0 1 0;
+	-fx-padding: 0.0em;
+}
+
+#agent-browserStealer-tableView .table-cell {
+	-fx-alignment: CENTER;
+	-fx-column-halignment: CENTER;
+	-fx-row-valignment: CENTER;
+	-fx-skin: "com.sun.javafx.scene.control.skin.TableCellSkin";
+	-fx-padding: 0.89em;
+	-fx-border-color: transparent transparent transparent transparent;
+	-fx-border-width: 0.093333em;
+	-fx-cell-size: 3.5em;
+	-fx-text-fill: rgb(191, 202, 210);
+	-fx-font: 13 "Verdana";
+}
+
+#agent-browserStealer-tableView .table-row-cell: hover {
+	-fx-background-color: rgb(68, 69, 87);
+	-fx-text-background-color: rgb(255, 255, 255);
+	-fx-background-radius: 18px;
+	-fx-background-insets: 3px;
+}
+
+#agent-browserStealer-tableView .table-row-cell: selected {
+	-fx-background-color: rgb(60, 61, 77);
+	-fx-text-background-color: rgb(255, 255, 255);
+	-fx-background-radius: 18px;
+	-fx-background-insets: 3px;
+}
+
+#agent-browserStealer-tableView > .viewport {
+   -fx-background-color: yellow;
+}
+
+#agent-browserStealer-tableView, .corner {
+   -fx-background-color: transparent;
+}
+
+#agent-browserStealer-tableView .scroll-bar:vertical .track{
+    -fx-background-color : rgb(26, 27, 36);
+    -fx-border-color :rgb(26, 27, 36);
+    -fx-background-radius : 0.0em;
+    -fx-border-radius :2.0em;
+}
+
+#agent-browserStealer-tableView .scroll-bar:vertical .increment-button ,
+#agent-browserStealer-tableView .scroll-bar:vertical .decrement-button {
+    -fx-background-color :rgb(26, 27, 36);
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 10.0 0.0 0.0;
+}
+
+#agent-browserStealer-tableView .scroll-bar .increment-arrow,
+#agent-browserStealer-tableView .scroll-bar .decrement-arrow{
+    -fx-shape : " ";
+    -fx-padding :0.15em 0.0;
+}
+
+#agent-browserStealer-tableView .scroll-bar:vertical .increment-arrow,
+#agent-browserStealer-tableView .scroll-bar:vertical .decrement-arrow{
+    -fx-shape : " ";
+    -fx-padding :0.0 0.15em;
+}
+
+#agent-browserStealer-tableView .scroll-bar:vertical .thumb {
+    -fx-background-color :derive(black,90.0%);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}
+
+#agent-browserStealer-tableView .scroll-bar:vertical .thumb:hover {
+    -fx-background-color :derive(#4D4C4F,10.0%);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}
+
+#agent-fileManager-tableView .column-header {
+	-fx-background-color: transparent;
+}
+
+#agent-fileManager-tableView .column-header-background {
+	-fx-background-color: transparent;
+	-fx-padding: 0.97em;
+}
+
+#agent-fileManager-tableView .column-header-background .label {
+	-fx-background-color: transparent;
+	-fx-text-fill: rgb(126, 127, 142);
+	-fx-font: 15 Helvetica;
+	-fx-font-weight: bold;
+	-fx-border-color: transparent transparent transparent transparent;
+}
+
+#agent-fileManager-tableView .show-hide-columns-button {
+	-fx-background-color: transparent;
+	-fx-border-color: -fx-box-border;
+	-fx-border-insets: -1 -1 0 0;
+}
+
+#agent-fileManager-tableView .filler {
+	-fx-background-color: transparent;
+}
+
+#agent-fileManager-tableView {
+	-fx-background-color: transparent;
+}
+
+#agent-fileManager-tableView .table-row-cell:odd {
+	-fx-background-color: transparent;
+	-fx-background-insets: 0, 0 0 1 0;
+	-fx-padding: 0.0em;
+}
+
+#agent-fileManager-tableView .table-row-cell:even {
+	-fx-background-color: transparent;
+	-fx-background-insets: 0, 0 0 1 0;
+	-fx-padding: 0.0em;
+}
+
+#agent-fileManager-tableView .table-cell {
+	-fx-alignment: CENTER;
+	-fx-column-halignment: CENTER;
+	-fx-row-valignment: CENTER;
+	-fx-skin: "com.sun.javafx.scene.control.skin.TableCellSkin";
+	-fx-padding: 0.89em;
+	-fx-border-color: transparent transparent transparent transparent;
+	-fx-border-width: 0.093333em;
+	-fx-cell-size: 3.5em;
+	-fx-text-fill: rgb(191, 202, 210);
+	-fx-font: 13 "Verdana";
+}
+
+#agent-fileManager-tableView .table-row-cell: hover {
+	-fx-background-color: rgb(68, 69, 87);
+	-fx-text-background-color: rgb(255, 255, 255);
+	-fx-background-radius: 18px;
+	-fx-background-insets: 3px;
+}
+
+#agent-fileManager-tableView .table-row-cell: selected {
+	-fx-background-color: rgb(60, 61, 77);
+	-fx-text-background-color: rgb(255, 255, 255);
+	-fx-background-radius: 18px;
+	-fx-background-insets: 3px;
+}
+
+#agent-fileManager-tableView > .viewport {
+   -fx-background-color: yellow;
+}
+
+#agent-fileManager-tableView, .corner {
+   -fx-background-color: transparent;
+}
+
+#agent-fileManager-tableView .scroll-bar:vertical .track{
+    -fx-background-color : rgb(26, 27, 36);
+    -fx-border-color :rgb(26, 27, 36);
+    -fx-background-radius : 0.0em;
+    -fx-border-radius :2.0em;
+}
+
+#agent-fileManager-tableView .scroll-bar:vertical .increment-button ,
+#agent-fileManager-tableView .scroll-bar:vertical .decrement-button {
+    -fx-background-color :rgb(26, 27, 36);
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 10.0 0.0 0.0;
+}
+
+#agent-fileManager-tableView .scroll-bar .increment-arrow,
+#agent-fileManager-tableView .scroll-bar .decrement-arrow{
+    -fx-shape : " ";
+    -fx-padding :0.15em 0.0;
+}
+
+#agent-fileManager-tableView .scroll-bar:vertical .increment-arrow,
+#agent-fileManager-tableView .scroll-bar:vertical .decrement-arrow{
+    -fx-shape : " ";
+    -fx-padding :0.0 0.15em;
+}
+
+#agent-fileManager-tableView .scroll-bar:vertical .thumb {
+    -fx-background-color :derive(black,90.0%);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}
+
+#agent-fileManager-tableView .scroll-bar:vertical .thumb:hover {
+    -fx-background-color :derive(#4D4C4F,10.0%);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}
