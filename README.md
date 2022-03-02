@@ -89,3 +89,4 @@ Under no circumstances should this software be used as malicious or on systems t
 
 By using this code, you are subject to the rules above.
 
+⚠️ Some pieces of code like the autoupdater are old and may not be good to use anymore.
