@@ -1,4 +1,4 @@
-# Pandora v1.0.0.3
+# Pandora
 
 ![Logo](https://cdn.discordapp.com/attachments/914164467548446730/948678891155902515/pandora.png)
 
