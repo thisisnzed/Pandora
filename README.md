@@ -90,3 +90,5 @@ Under no circumstances should this software be used as malicious or on systems t
 By using this code, you are subject to the rules above.
 
 ⚠️ Some pieces of code like the autoupdater are old and may not be good to use anymore.
+
+No support will be provided for compilation problems; I only share this code to get feedback or to help people carry out their project(s) by taking pieces of Pandora code.
