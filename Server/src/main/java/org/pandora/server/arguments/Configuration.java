@@ -18,4 +18,15 @@ public class Configuration {
         this.allowed = defaultAllowed;
         this.defDebug = defDebug;
     }
+
+    public String getPort() {
+        return null;
+    }
+
+    public String getDebug() {
+        return null;
+    }
+
+    public void setDefDebug(boolean parseBoolean) {
+    }
 }

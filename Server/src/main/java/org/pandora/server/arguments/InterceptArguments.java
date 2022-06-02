@@ -55,4 +55,7 @@ public class InterceptArguments {
         }
         this.configuration.setDefDebug(Boolean.parseBoolean(this.configuration.getDebug()));
     }
+
+    public void setArgs(String[] args2) {
+    }
 }

@@ -72,4 +72,8 @@ public class Server {
             }
         }
     }
+
+    public Object getHandlerManager() {
+        return null;
+    }
 }
