@@ -1,6 +1,6 @@
 # Pandora
 
-![Logo](https://cdn.discordapp.com/attachments/914164467548446730/948678891155902515/pandora.png)
+![Logo](https://cdn.discordapp.com/attachments/863136128717815868/1064978129350836254/pandora.png)
 
 Pandora is now an open-source project allowing to control different agents (Windows & Linux machine) from server(s) and master.
 
@@ -17,7 +17,6 @@ Pandora is now an open-source project allowing to control different agents (Wind
     - All data between agents, servers, masters is encrypted so that no one can read the content
 - **AV Bypass**
     - As you can see, the virus is not detected by any antivirus on VT (nor on victim machines)
-![Logo](https://cdn.discordapp.com/attachments/914164467548446730/948678683311366174/download.png)
 - **Botnet Attack**
     - You can carry out massive attacks on websites: the power of the attack will mainly depend on your number of victims (to give you an idea, with 750-1000 victims you can crash some big Russian government sites)
 - **Chrome & Opera Stealer**
@@ -46,36 +45,6 @@ Pandora is now an open-source project allowing to control different agents (Wind
     - Screenshot
     - Socket
     - ...
-
-## Master • Some UI
-
-### Connection
-
-![Logo](https://cdn.discordapp.com/attachments/914164467548446730/948689274864271431/Screenshot_6.png)
-
-### Home
-
-![Logo](https://cdn.discordapp.com/attachments/914164467548446730/948688169040228392/Screenshot_1.png)
-
-### Agent Builder
-
-![Logo](https://cdn.discordapp.com/attachments/914164467548446730/948688169241559130/Screenshot_2.png)
-
-### Controller for agents
-
-![Logo](https://cdn.discordapp.com/attachments/914164467548446730/948688169405141043/Screenshot_3.png)
-
-### DDoS
-
-![Logo](https://cdn.discordapp.com/attachments/914164467548446730/948688169652609095/Screenshot_4.png)
-
-### Settings
-
-![Logo](https://cdn.discordapp.com/attachments/914164467548446730/948688169866494032/Screenshot_5.png)
-
-### And more
-
-There are other interfaces that you can discover by right-clicking on the agent you want to handle (in the "Agents" menu)
 
 ## Disclaimer
 
